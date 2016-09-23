@@ -16,7 +16,7 @@ platformio lib install 562
 ## Credits
 This library has initially been written by Daniel Eichhorn (@squix78). Many thanks go to Fabrice Weinberg (@FWeinb) for optimizing and refactoring many aspects of the library. Also many thanks to the many committers who helped to add new features and who fixed many bugs.
 The init sequence for the SSD1306 was inspired by Adafruit's library for the same display.
-This particular fork by @LimaLima is a lasy fix to make this library work with 128x32 displays instead of 128x64.
+This particular fork by @LimaLima is a lazy fix to make this library work with 128x32 displays instead of 128x64.
 
 ## Usage
 
