@@ -3,7 +3,7 @@ esp8266-oled-ssd1306 [![Build Status](https://travis-ci.org/squix78/esp8266-oled
 
 > We just released version 3.0.0. Please have a look at our [upgrade guide](UPGRADE-3.0.md)
 
-This is a driver for the SSD1306 based 128x64 pixel OLED display running on the Arduino/ESP8266 platform.
+This is a driver for the SSD1306 based 128x32 pixel OLED display running on the Arduino/ESP8266 platform.
 Can be used with either the I2C or SPI version of the display
 
 You can either download this library as a zip file and unpack it to your Arduino/libraries folder or (once it has been added) choose it from the Arduino library manager.
@@ -16,6 +16,7 @@ platformio lib install 562
 ## Credits
 This library has initially been written by Daniel Eichhorn (@squix78). Many thanks go to Fabrice Weinberg (@FWeinb) for optimizing and refactoring many aspects of the library. Also many thanks to the many committers who helped to add new features and who fixed many bugs.
 The init sequence for the SSD1306 was inspired by Adafruit's library for the same display.
+This particular fork by @LimaLima is a lasy fix to make this library work with 128x32 displays instead of 128x64.
 
 ## Usage
 

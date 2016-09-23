@@ -45,8 +45,8 @@
 
 // Display settings
 #define DISPLAY_WIDTH 128
-#define DISPLAY_HEIGHT 64
-#define DISPLAY_BUFFER_SIZE 1024
+#define DISPLAY_HEIGHT 32
+#define DISPLAY_BUFFER_SIZE 512
 
 // Header Values
 #define JUMPTABLE_BYTES 4
@@ -137,9 +137,6 @@ class OLEDDisplay : public Print {
 
     // Draw the border of a circle
     void drawCircle(int16_t x, int16_t y, int16_t radius);
-
-    // Draw all Quadrants specified in the quads bit mask
-    void drawCircleQuads(int16_t x0, int16_t y0, int16_t radius, uint8_t quads);
 
     // Fill circle
     void fillCircle(int16_t x, int16_t y, int16_t radius);
@@ -247,10 +244,10 @@ class OLEDDisplay : public Print {
     char      *logBuffer                       = NULL;
 
     // Send a command to the display (low level function)
-    virtual void sendCommand(uint8_t com) {};
+    virtual void sendCommand(uint8_t com);
 
     // Connect to the display
-    virtual bool connect() {};
+    virtual bool connect();
 
     // Send all the init commands
     void sendInitCommands();

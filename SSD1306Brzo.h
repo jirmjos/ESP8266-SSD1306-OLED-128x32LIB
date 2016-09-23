@@ -119,7 +119,7 @@ class SSD1306Brzo : public OLEDDisplay {
 
        sendCommand(PAGEADDR);
        sendCommand(0x0);
-       sendCommand(0x7);
+       sendCommand(0x3);
 
        uint8_t sendBuffer[17];
        sendBuffer[0] = 0x40;
